@@ -12,7 +12,7 @@ var express = require('express'),
 serv = require('http').Server(app);
 
 // request pathways
-app.use(compression());
+app.use(compression())
     .get('/', function(req, res, next){
       res.sendFile(__dirname + '/public/index.html');
     })
