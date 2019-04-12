@@ -6,18 +6,18 @@ var logger = require('./logger');
 var compression = require('compression');
 
 var express = require('express'),
-    app = express(),
-    serv;
-
-serv = require('http').Server(app);
+    routes = express(),
+    compression = require('compression'),
+    server = require('http').Server(routes);
 
 // request pathways
-app.use(compression())
-    .get('/', function(req, res, next){
-      res.sendFile(__dirname + '/public/index.html');
-    })
-    .use('/', express.static(__dirname + '/public'));
+routes.use(compression())
+      .get('/', function(req, res, next){
+        res.sendFile(__dirname + '/public/index.html');
+      })
+      .use('/', express.static(__dirname + '/public'));
 
-serv.listen(process.env.PORT || 5000, function(){
-  logger.info('starting server on port ' + config.port);
+var port = process.env.PORT || 5000;
+server.listen(port, function(){
+  logger.info('starting server on port ' + port);
 });
