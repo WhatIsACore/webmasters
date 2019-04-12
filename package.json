@@ -1,0 +1,13 @@
+{
+  "name": "webmasters",
+  "version": "1.0.0",
+  "description": "webmasters project",
+  "main": "index.js",
+  "author": "zeki xu, timothy yang, allison zheng",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.3",
+    "express": "^4.16.4",
+    "winston": "^3.2.1"
+  }
+}
