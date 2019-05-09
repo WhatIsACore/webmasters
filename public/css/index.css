@@ -1,3 +1,73 @@
-#billie-eilish{
-  width: 380px;
+body{
+  padding: 0;
+  margin: 0;
+}
+svg{
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+#banner{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #236, #844);
+}
+
+#sun-wrapper{
+  position: relative;
+  width: 100vw;
+  height: calc(65vh - 5vw);
+  padding-top: calc(10vh + 5vw);
+  overflow: hidden;
+}
+#sun{
+  position: fixed;
+  width: calc(14vw + 14vh);
+  height: calc(14vw + 14vh);
+  border-radius: calc(7vw + 7vh);
+  background: linear-gradient(to bottom, #e57, #e9c);
+  left: calc(43vw - 7vh);
+}
+#water{
+  position: relative;
+  width: 100vw;
+  height: 25vh;
+  background: linear-gradient(to bottom, #113, #002);
+  z-index: 2;
+  -webkit-transform: translateZ(1px);
+  -moz-transform: translateZ(1px);
+  -o-transform: translateZ(1px);
+  transform: translateZ(1px);
+}
+
+#reflection-stack{
+  position: absolute;
+  width: calc(14vw + 14vh);
+  margin: 0 calc(43vw - 7vh);
+  text-align: center;
+  filter: url('#wavy');
+  overflow: hidden;
+}
+.reflection-line{
+  width: 20%;
+  display: block;
+  background-color: #e9c;
+  height: 2vh;
+  border-radius: 1vh;
+  margin: auto;
+  margin-top: -1vh;
+  transition: width 0.3s linear;
+}
+
+#landing{
+  width: 100vw;
+  height: 50vh;
+  background-color: #002;
+  z-index: 2;
+  -webkit-transform: translateZ(1px);
+  -moz-transform: translateZ(1px);
+  -o-transform: translateZ(1px);
+  transform: translateZ(1px);
 }

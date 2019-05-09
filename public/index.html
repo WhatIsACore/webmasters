@@ -9,14 +9,46 @@
 
   <body>
 
-    <div id='billie-eilish'>
-      One day, Billie Eilish was walking outside and she saw a boy crying.
-      She said to him 'Here kid, have a roll of Air Conditioning Pair Coil 1/4' x 3/8' 410A 20m Polyethylene UV protected insulated Copper heat resistant to 120C.
-      You're destined to to great things.'
-      <br><br>
-      That boy was Elon Musk
+    <div id='banner'>
+
+      <div id='sun-wrapper'>
+        <div id='sun'></div>
+      </div>
+
+      <div id='water'>
+        <div id='reflection-stack'>
+          <div class='reflection-line'></div>
+          <div class='reflection-line'></div>
+          <div class='reflection-line'></div>
+          <div class='reflection-line'></div>
+          <div class='reflection-line'></div>
+          <div class='reflection-line'></div>
+          <div class='reflection-line'></div>
+          <div class='reflection-line'></div>
+          <div class='reflection-line'></div>
+          <div class='reflection-line'></div>
+          <div class='reflection-line'></div>
+          <div class='reflection-line'></div>
+          <div class='reflection-line'></div>
+          <div class='reflection-line'></div>
+          <div class='reflection-line'></div>
+        </div>
+      </div>
+
     </div>
 
+    <div id='landing'></div>
+
+    <svg>
+      <defs>
+        <filter id='wavy'>
+          <feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' />
+          <feColorMatrix in='blur' type='matrix' values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 10 -3' result='goo' />
+          <feBlend in='SourceGraphic' in2='wavy' />
+        </filter>
+      </defs>
+    </svg>
+    <script type='text/javascript' src='js/home.js'></script>
   </body>
 
 </html>
