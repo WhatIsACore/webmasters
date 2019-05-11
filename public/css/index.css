@@ -122,7 +122,6 @@ svg{
 #album-grid .item{
   position: relative;
   margin: 20px;
-  outline: 0px solid #fcf;
   flex-grow: 1;
   cursor: pointer;
 }
@@ -131,6 +130,21 @@ svg{
   display: block;
   padding-top: 100%;
   transition: background-color 0.2s ease;
+}
+#album-grid .item .name{
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  color: #fef;
+  font-size: 20px;
+  margin-top: -60px;
+  padding: 20px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#album-grid .item:hover .name{
+  opacity: 1;
 }
 #album-grid .item.album1{
   background: url('../media/albumcovers/album1.jpg');
