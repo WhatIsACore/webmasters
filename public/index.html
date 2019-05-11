@@ -4,38 +4,48 @@
 
   <head>
     <title> webmasters project </title>
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet'>
     <link rel='stylesheet' type='text/css' href='css/index.css'>
   </head>
 
   <body>
 
-    <div id='banner'>
-
-      <div id='sun-wrapper'>
-        <div id='sun'></div>
+    <div id='sky'>
+      <div id='navbar'>
+          <div class='nav-button'>
+            about
+          </div>
+          <div class='nav-button'>
+            music
+          </div>
+          <div class='nav-button tour'>
+            tour
+          </div>
+          <div class='nav-button'>
+            merch
+          </div>
+          <div class='nav-button'>
+            blog
+          </div>
       </div>
 
-      <div id='water'>
-        <div id='reflection-stack'>
-          <div class='reflection-line'></div>
-          <div class='reflection-line'></div>
-          <div class='reflection-line'></div>
-          <div class='reflection-line'></div>
+      <div id='sun'></div>
+    </div>
+    <div id='water'>
+      <div id='sun-reflection'></div>
+
+      <div id='portfolio'>
+        <div class='section-title'>LATEST RELEASES</div>
+        <div id='album-grid'>
+          <div class='item album1'></div>
+          <div class='item album2'></div>
+          <div class='item album3'></div>
+          <div class='item album4'></div>
         </div>
       </div>
-
     </div>
 
-    <div id='landing'></div>
-
-    <svg>
-      <defs>
-        <filter id='wavy'>
-          <feGaussianBlur in='SourceGraphic' stdDeviation='12' result='blur' />
-          <feColorMatrix in='blur' type='matrix' values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 24 -6' />
-        </filter>
-      </defs>
-    </svg>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script type='text/javascript' src='js/home.js'></script>
   </body>
 
