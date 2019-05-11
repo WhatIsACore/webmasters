@@ -7,6 +7,9 @@ svg{
   height: 0;
   display: none;
 }
+a{
+  text-decoration: none;
+}
 
 #navbar{
   position: absolute;
@@ -82,10 +85,10 @@ svg{
   right: 0;
   margin: 20vh auto 0;
 }
+
 #water{
   position: relative;
   width: 100%;
-  min-height: 100vh;
   background: linear-gradient(to bottom, #113, #002);
   z-index: 2;
   overflow: hidden;
@@ -102,19 +105,24 @@ svg{
   opacity: 0.7;
 }
 
-#portfolio{
-  margin: 80px 100px;
-}
-#portfolio .section-title{
+.section-title{
   text-align: center;
   font-family: 'Noto Sans', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 28px;
-  color: #fcf;
-  margin-bottom: 80px;
   letter-spacing: 0.2em;
 }
+
+#portfolio{
+  margin: 80px 100px;
+  text-align: center;
+}
+#portfolio .section-title, #news .section-title{
+  color: #fcf;
+  margin-bottom: 80px;
+}
+
 #album-grid{
   display: flex;
   margin: -20px;
@@ -132,7 +140,7 @@ svg{
   margin: 20px;
   flex-grow: 1;
   cursor: pointer;
-  min-width: 200px;
+  min-width: 220px;
 }
 #album-grid .item::before{
   content: '';
@@ -177,4 +185,25 @@ svg{
 }
 #album-grid .item:hover::before{
   background: rgba(0, 0, 0, 0.5);
+}
+
+#all-music-btn{
+  display: inline-block;
+  position: relative;
+  margin: 80px auto 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  font-family: 'Noto Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  outline: 3px solid #fcf;
+  color: #fcf;
+  cursor: pointer;
+  transition: color 0.2s ease, outlines 0.2s ease;
+}
+#all-music-btn:hover{
+  color: #fff;
+  outline: 3px solid #fff;
 }
