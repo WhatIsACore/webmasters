@@ -118,12 +118,21 @@ svg{
 #album-grid{
   display: flex;
   margin: -20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+#album-grid .align-group{
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 #album-grid .item{
   position: relative;
   margin: 20px;
   flex-grow: 1;
   cursor: pointer;
+  min-width: 200px;
 }
 #album-grid .item::before{
   content: '';
