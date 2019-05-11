@@ -28,6 +28,7 @@ svg{
   transition: color 0.2s ease, outline 0.2s ease;
   width: 100px;
   text-align: center;
+  letter-spacing: 0.2em;
 }
 #navbar .nav-button:hover{
   color: #fff;
@@ -41,7 +42,22 @@ svg{
   outline: 3px solid #fff;
 }
 
-#water, #landing, #navbar, #portfolio{
+#logo{
+  position: absolute;
+  text-align: center;
+  padding: calc(35vh - (267 / 2048) * (50vw - 100px) + 45px) 100px;
+}
+#logo img{
+  width: 100%;
+  z-index: 10;
+}
+@media screen and (max-height: 650px){
+    #logo{
+      padding: 190px 100px;
+    }
+}
+
+#water, #navbar, #portfolio{
   -webkit-transform: translateZ(1px);
   -moz-transform: translateZ(1px);
   -o-transform: translateZ(1px);
@@ -54,6 +70,7 @@ svg{
   height: 70vh;
   background: linear-gradient(to bottom, #236, #844);
   overflow: hidden;
+  min-height: 500px;
 }
 #sun{
   position: fixed;
@@ -86,7 +103,7 @@ svg{
 }
 
 #portfolio{
-  margin: 100px;
+  margin: 80px 100px;
 }
 #portfolio .section-title{
   text-align: center;
@@ -95,7 +112,8 @@ svg{
   font-weight: 700;
   font-size: 28px;
   color: #fcf;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
+  letter-spacing: 0.2em;
 }
 #album-grid{
   display: flex;
@@ -126,6 +144,11 @@ svg{
 }
 #album-grid .item.album3{
   background: url('../media/albumcovers/album3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#album-grid .item.album4{
+  background: url('../media/albumcovers/album4.jpg');
   background-size: cover;
   background-position: center;
 }
