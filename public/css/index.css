@@ -1,11 +1,7 @@
 body{
-  padding: 0;
   margin: 0;
-}
-svg{
-  width: 0;
-  height: 0;
-  display: none;
+  padding: 0;
+  background-color: #000;
 }
 a{
   text-decoration: none;
@@ -13,197 +9,56 @@ a{
 
 #navbar{
   position: absolute;
-  padding: 30px 0;
-  height: 30px;
-  width: 100%;
-  text-align: center;
+  width: calc(100% - 160px);
+  height: 37px;
+  padding: 30px 60px 30px 100px;
+  background-color: #000;
+  text-align: right;
   font-family: 'Noto Sans', sans-serif;
-  text-transform: uppercase;
+  z-index: 1;
+}
+#navbar .nav-home{
+  display: inline-block;
+  float: left;
+  width: 200px;
+  margin-top: -2px;
+  padding: 10px;
+  text-align: left;
+  color: #fef;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
 #navbar .nav-button{
-  color: #fcf;
-  font-weight: 700;
-  font-size: 17px;
-  padding: 10px;
   display: inline-block;
   margin: 0 20px;
-  cursor: pointer;
-  transition: color 0.2s ease, outline 0.2s ease;
-  width: 100px;
-  text-align: center;
+  padding: 10px;
+  color: #fcf;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
   letter-spacing: 0.2em;
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
 #navbar .nav-button:hover{
   color: #fff;
 }
 #navbar .nav-button.tour{
-  font-size: 20px;
   outline: 3px solid #fcf;
-  margin: 0 40px;
+  transition: color 0.2s ease, outline 0.2s ease;
 }
 #navbar .nav-button.tour:hover{
   outline: 3px solid #fff;
 }
 
-#logo{
-  position: absolute;
-  text-align: center;
-  padding: calc(35vh - (267 / 2048) * (50% - 100px) + 45px) 100px;
-}
-#logo img{
-  width: 100%;
-  z-index: 10;
-}
-@media screen and (max-height: 650px){
-    #logo{
-      padding: 190px 100px;
-    }
-}
-
-#water, #navbar, #portfolio{
-  -webkit-transform: translateZ(1px);
-  -moz-transform: translateZ(1px);
-  -o-transform: translateZ(1px);
-  transform: translateZ(1px);
-}
-
-#sky{
-  position: relative;
-  width: 100%;
-  height: 70vh;
-  background: linear-gradient(to bottom, #236, #844);
-  overflow: hidden;
-  min-height: 500px;
-}
-#sun{
-  position: fixed;
-  width: calc(14vw + 14vh);
-  height: calc(14vw + 14vh);
-  border-radius: calc(7vw + 7vh);
-  background: linear-gradient(to bottom, #e57, #e9c);
-  left: 0;
-  right: 0;
-  margin: 20vh auto 0;
-}
-
-#water{
-  position: relative;
-  width: 100%;
-  background: linear-gradient(to bottom, #113, #002);
-  z-index: 2;
-  overflow: hidden;
-}
-#sun-reflection{
-  position: absolute;
-  width: calc(14vw + 14vh);
-  height: calc(14vw + 14vh);
-  border-radius: calc(7vw + 7vh);
-  background: linear-gradient(to top, #e57, #e9c);
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  opacity: 0.7;
-}
-
 .section-title{
   text-align: center;
   font-family: 'Noto Sans', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
   font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
   letter-spacing: 0.2em;
-}
-
-#portfolio{
-  margin: 80px 100px;
-  text-align: center;
-}
-#portfolio .section-title, #news .section-title{
-  color: #fcf;
-  margin-bottom: 80px;
-}
-
-#album-grid{
-  display: flex;
-  margin: -20px;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-#album-grid .align-group{
-  display: flex;
-  flex-grow: 1;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-#album-grid .item{
-  position: relative;
-  margin: 20px;
-  flex-grow: 1;
-  cursor: pointer;
-  min-width: 220px;
-}
-#album-grid .item::before{
-  content: '';
-  display: block;
-  padding-top: 100%;
-  transition: background-color 0.2s ease;
-}
-#album-grid .item .name{
-  position: absolute;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  color: #fef;
-  font-size: 17px;
-  margin-top: -60px;
-  padding: 20px;
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-#album-grid .item:hover .name{
-  opacity: 1;
-}
-#album-grid .item.album1{
-  background: url('../media/albumcovers/album1.jpg');
-  background-size: cover;
-  background-position: center;
-}
-#album-grid .item.album2{
-  background: url('../media/albumcovers/album2.jpg');
-  background-size: cover;
-  background-position: center;
-}
-#album-grid .item.album3{
-  background: url('../media/albumcovers/album3.jpg');
-  background-size: cover;
-  background-position: center;
-}
-#album-grid .item.album4{
-  background: url('../media/albumcovers/album4.jpg');
-  background-size: cover;
-  background-position: center;
-}
-#album-grid .item:hover::before{
-  background: rgba(0, 0, 0, 0.5);
-}
-
-#all-music-btn{
-  display: inline-block;
-  position: relative;
-  margin: 80px auto 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  font-family: 'Noto Sans', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 20px;
-  outline: 3px solid #fcf;
-  color: #fcf;
-  cursor: pointer;
-  transition: color 0.2s ease, outlines 0.2s ease;
-}
-#all-music-btn:hover{
-  color: #fff;
-  outline: 3px solid #fff;
 }

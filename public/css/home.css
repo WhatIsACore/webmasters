@@ -1,0 +1,166 @@
+#navbar{
+  position: absolute;
+  width: 100%;
+  height: 37px;
+  padding: 30px 0;
+  background-color: transparent;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+}
+#navbar .nav-button{
+  display: inline-block;
+  width: 80px;
+  margin: 0 20px;
+  padding: 10px;
+  text-align: center;
+  color: #fcf;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+#navbar .nav-button:hover{
+  color: #fff;
+}
+#navbar .nav-button.tour{
+  margin: -1px 40px 0;
+  outline: 3px solid #fcf;
+  font-size: 20px;
+  transition: color 0.2s ease, outline 0.2s ease;
+}
+#navbar .nav-button.tour:hover{
+  outline: 3px solid #fff;
+}
+
+#logo{
+  position: absolute;
+  padding: calc(27vh + 7vw - (267 / 2048) * (50% - 100px)) 100px;
+  text-align: center;
+}
+#logo img{
+  width: 100%;
+}
+@media screen and (max-height: 650px){
+    #logo{
+      padding: 190px 100px;
+    }
+}
+
+#water, #navbar, #portfolio{
+  -webkit-transform: translateZ(1px);
+  -moz-transform: translateZ(1px);
+  -o-transform: translateZ(1px);
+  transform: translateZ(1px);
+}
+
+#sky{
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  background: linear-gradient(to bottom, #236, #844);
+  overflow: hidden;
+}
+#sun{
+  position: fixed;
+  width: calc(14vw + 14vh);
+  height: calc(14vw + 14vh);
+  left: 0;
+  right: 0;
+  margin: 20vh auto 0;
+  border-radius: calc(7vw + 7vh);
+  background: linear-gradient(to bottom, #e57, #e9c);
+}
+
+#water{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #113, #002);
+  overflow: hidden;
+}
+#sun-reflection{
+  position: absolute;
+  width: calc(14vw + 14vh);
+  height: calc(14vw + 14vh);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: calc(7vw + 7vh);
+  background: linear-gradient(to top, #e57, #e9c);
+  opacity: 0.7;
+}
+
+#portfolio{
+  margin: 80px 100px;
+}
+#portfolio .section-title{
+  margin-bottom: 65px;
+  color: #fcf;
+}
+
+#album-grid{
+  display: flex;
+  margin: -20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+#album-grid .align-group{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-grow: 1;
+}
+#album-grid .item{
+  position: relative;
+  min-width: 220px;
+  margin: 20px;
+  flex-grow: 1;
+  cursor: pointer;
+}
+#album-grid .item::before{
+  content: '';
+  display: block;
+  padding-top: 100%;
+  transition: background-color 0.2s ease;
+}
+#album-grid .item .name{
+  position: absolute;
+  margin-top: -60px;
+  padding: 20px;
+  color: #fef;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+#album-grid .item:hover .name{
+  opacity: 1;
+}
+#album-grid .item.album1{
+  background: url('../media/albumcovers/album1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#album-grid .item.album2{
+  background: url('../media/albumcovers/album2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#album-grid .item.album3{
+  background: url('../media/albumcovers/album3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#album-grid .item.album4{
+  background: url('../media/albumcovers/album4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#album-grid .item:hover::before{
+  background: rgba(0, 0, 0, 0.5);
+}

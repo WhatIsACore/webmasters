@@ -1,3 +1,5 @@
+'use strict';
+
 // so we can feel like we're using jquery
 function $(query){
   var q = document.querySelectorAll(query);

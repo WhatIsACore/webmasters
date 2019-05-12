@@ -1,0 +1,94 @@
+.album{
+  position: relative;
+  width: calc(100% - 200px);
+  padding: 100px;
+  min-height: calc(100vh - 200px);
+  background: linear-gradient(to bottom, #236, #844);
+}
+
+.info-panel{
+  display: flex;
+  width: 700px;
+  height: 280px;
+  left: 0;
+  right: 0;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: #113;
+}
+.info-panel .album-cover{
+  display: inline-block;
+  width: 280px;
+  height: 280px;
+  background-color: #000;
+}
+.album-cover.album1{
+  background: url('../media/albumcovers/album1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.album-cover.album2{
+  background: url('../media/albumcovers/album2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.album-cover.album3{
+  background: url('../media/albumcovers/album3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.album-cover.album4{
+  background: url('../media/albumcovers/album4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.info-panel .album-info{
+  display: flex;
+  width: 395px;
+  height: 280px;
+  margin-left: 25px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.info-panel .album-name{
+  margin-bottom: 20px;
+  color: #fef;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+}
+.info-panel .album-author, .info-panel .album-date{
+  margin-bottom: 5px;
+  color: #bab;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+}
+.info-panel .author{
+  color: #fef;
+}
+.info-panel .album-desc{
+  flex-grow: 1;
+  margin-top: 12px;
+  color: #bab;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+}
+.info-panel .purchase-btn{
+  display: inline-block;
+  padding: 10px;
+  border: 2.5px solid #bab;
+  color: #bab;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: color 0.2s ease, border 0.2s ease;
+}
+.info-panel .purchase-btn:hover{
+  border: 2.5px solid #fef;
+  color: #fef;
+}

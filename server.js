@@ -15,6 +15,9 @@ routes.use(compression())
       .get('/', function(req, res, next){
         res.sendFile(__dirname + '/public/index.html');
       })
+      .get('/music/*', function(req, res, next){
+        res.sendFile(__dirname + '/public/' + req.url + '.html');
+      })
       .use('/', express.static(__dirname + '/public'));
 
 var port = process.env.PORT || 5000;
