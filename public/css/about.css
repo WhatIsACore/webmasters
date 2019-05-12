@@ -1,0 +1,22 @@
+#about{
+  position: relative;
+  width: 100vw;
+  min-height: calc(100vh);
+  padding-top: 97px;
+  background: linear-gradient(to bottom, #236, #844);
+}
+
+#about .section-title{
+  margin-top: 80px;
+  margin-bottom: 40px;
+  color: #fef;
+  font-family: 'Noto Sans', sans-serif;
+  text-transform: lowercase;
+}
+#about .banner-image{
+  height: 500px;
+  margin: 0 100px;
+  background: url('/media/about-banner.jpg');
+  background-size: cover;
+  background-position: center;
+}

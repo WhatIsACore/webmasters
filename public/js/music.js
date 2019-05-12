@@ -7,5 +7,5 @@ function $(query){
 }
 
 $('.purchase-btn').addEventListener('click', function(e){
-  window.location.href = 'merch?prod=' + e.currentTarget.dataset.target;
+  window.location.href = '/merch?prod=' + e.currentTarget.dataset.target;
 });

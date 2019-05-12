@@ -23,22 +23,22 @@
   background-color: #000;
 }
 .album-cover.album1{
-  background: url('../media/albumcovers/album1.jpg');
+  background: url('/media/albumcovers/album1.jpg');
   background-size: cover;
   background-position: center;
 }
 .album-cover.album2{
-  background: url('../media/albumcovers/album2.jpg');
+  background: url('/media/albumcovers/album2.jpg');
   background-size: cover;
   background-position: center;
 }
 .album-cover.album3{
-  background: url('../media/albumcovers/album3.jpg');
+  background: url('/media/albumcovers/album3.jpg');
   background-size: cover;
   background-position: center;
 }
 .album-cover.album4{
-  background: url('../media/albumcovers/album4.jpg');
+  background: url('/media/albumcovers/album4.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -53,7 +53,7 @@
 .info-panel .album-name{
   margin-bottom: 20px;
   color: #fef;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 28px;
   font-weight: 700;
   line-height: 28px;
@@ -62,7 +62,7 @@
 .info-panel .album-author, .info-panel .album-date{
   margin-bottom: 5px;
   color: #bab;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 17px;
 }
 .info-panel .author{
@@ -72,7 +72,7 @@
   flex-grow: 1;
   margin-top: 12px;
   color: #bab;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 17px;
 }
 .info-panel .purchase-btn{

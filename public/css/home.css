@@ -142,22 +142,22 @@
   opacity: 1;
 }
 #album-grid .item.album1{
-  background: url('../media/albumcovers/album1.jpg');
+  background: url('/media/albumcovers/album1.jpg');
   background-size: cover;
   background-position: center;
 }
 #album-grid .item.album2{
-  background: url('../media/albumcovers/album2.jpg');
+  background: url('/media/albumcovers/album2.jpg');
   background-size: cover;
   background-position: center;
 }
 #album-grid .item.album3{
-  background: url('../media/albumcovers/album3.jpg');
+  background: url('/media/albumcovers/album3.jpg');
   background-size: cover;
   background-position: center;
 }
 #album-grid .item.album4{
-  background: url('../media/albumcovers/album4.jpg');
+  background: url('/media/albumcovers/album4.jpg');
   background-size: cover;
   background-position: center;
 }

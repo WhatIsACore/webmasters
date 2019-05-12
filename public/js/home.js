@@ -19,6 +19,6 @@ var albums = $('#album-grid .item');
 for(var i in albums){
   if(!albums[i].dataset) break;
   albums[i].addEventListener('click', function(e){
-    window.location.href = 'music/' + e.currentTarget.dataset.target;
+    window.location.href = '/music/' + e.currentTarget.dataset.target;
   });
 }
