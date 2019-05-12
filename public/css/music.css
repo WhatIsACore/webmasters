@@ -44,9 +44,9 @@
 }
 .info-panel .album-info{
   display: flex;
-  width: 385px;
+  width: 390px;
   height: 280px;
-  margin-left: 35px;
+  margin-left: 30px;
   flex-direction: column;
   align-items: flex-start;
 }

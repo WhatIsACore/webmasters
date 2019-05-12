@@ -15,8 +15,23 @@ routes.use(compression())
       .get('/', function(req, res, next){
         res.sendFile(__dirname + '/public/index.html');
       })
+      .get('/about', function(req, res, next){
+        res.sendFile(__dirname + '/public/about.html');
+      })
+      .get('/music', function(req, res, next){
+        res.sendFile(__dirname + '/public/music.html');
+      })
       .get('/music/*', function(req, res, next){
         res.sendFile(__dirname + '/public/' + req.url + '.html');
+      })
+      .get('/tour', function(req, res, next){
+        res.sendFile(__dirname + '/public/tour.html');
+      })
+      .get('/merch', function(req, res, next){
+        res.sendFile(__dirname + '/public/merch.html');
+      })
+      .get('/blog', function(req, res, next){
+        res.sendFile(__dirname + '/public/blog.html');
       })
       .use('/', express.static(__dirname + '/public'));
 
