@@ -1,8 +1,7 @@
 #about{
   position: relative;
   width: 100vw;
-  min-height: calc(100vh);
-  padding-top: 97px;
+  padding: 97px 0 100px;
   background: linear-gradient(to bottom, #236, #844);
 }
 
@@ -10,7 +9,6 @@
   margin-top: 80px;
   margin-bottom: 40px;
   color: #fef;
-  font-family: 'Noto Sans', sans-serif;
   text-transform: lowercase;
 }
 #about .banner-image{
@@ -19,4 +17,15 @@
   background: url('/media/about-banner.jpg');
   background-size: cover;
   background-position: center;
+}
+#about #bio{
+  margin: 40px 100px;
+  padding: 40px;
+  background-color: #113;
+  color: #dcd;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 17px;
+}
+#about #bio .photo-cred{
+  opacity: 0.5;
 }
