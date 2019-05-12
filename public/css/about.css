@@ -1,31 +1,42 @@
 #about{
   position: relative;
   width: 100vw;
-  padding: 97px 0 100px;
+  padding-top: 97px;
   background: linear-gradient(to bottom, #236, #844);
 }
 
 #about .section-title{
   margin-top: 80px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   color: #fef;
   text-transform: lowercase;
 }
 #about .banner-image{
+  position: relative;
   height: 500px;
   margin: 0 100px;
   background: url('/media/about-banner.jpg');
   background-size: cover;
   background-position: center;
+  z-index: 2;
 }
 #about #bio{
+  position: relative;
   margin: 40px 100px;
   padding: 40px;
-  background-color: #113;
   color: #dcd;
   font-family: 'Noto Sans', sans-serif;
   font-size: 17px;
+  z-index: 2;
 }
 #about #bio .photo-cred{
   opacity: 0.5;
+}
+
+#water{
+  margin-top: -600px;
+  position: absolute;
+  width: 100vw;
+  height: 600px;
+  background: linear-gradient(to bottom, #113, #002);
 }
