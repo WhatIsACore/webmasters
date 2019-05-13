@@ -36,26 +36,43 @@
 #map .map-marker{
   display: inline-block;
   position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  margin: -12px 0 0 -12px;
+  width: 26px;
+  height: 26px;
+  padding-top: -3px;
+  border-radius: 13px;
+  margin: -13px 0 0 -13px;
   text-align: center;
   cursor: pointer;
   z-index: 2;
 }
 #map .map-marker:hover{
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #fff;
 }
 #map .map-marker::before{
   content: 'x';
   color: #fff;
   font-family: 'Noto Sans', sans-serif;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 700;
-  line-height: 20px;
-  transition: color 0.2s ease;
+  line-height: 23px;
 }
 #map .map-marker:hover::before{
   color: #000;
+}
+#map .map-marker .label{
+  display: none;
+  position: absolute;
+  width: 200px;
+  margin-top: -20px;
+  margin-left: 30px;
+  text-align: left;
+  color: #000;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+#map .map-marker:hover .label{
+  display: block;
 }

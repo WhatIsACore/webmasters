@@ -7,17 +7,21 @@ function $(query){
 }
 
 var map = $('#map');
+
+// uncomment this code to find the coordinates for new map markers
+/**
 map.addEventListener('click', function(e){
   var x = e.offsetX / map.offsetWidth;
   var y = e.offsetY / map.offsetHeight;
   alert(x.toFixed(5) + ' / ' + y.toFixed(5));
 });
+**/
 
 var tourMarkers = [
   {
     x: 0.1577,
     y: 0.2822,
-    city: 'Boise, Idaho',
+    city: 'Boise, ID',
     date: '6/1/2019',
     time: '8:00pm',
     venue: 'Taco Bell Arena'
@@ -25,7 +29,7 @@ var tourMarkers = [
   {
     x: 0.0233,
     y: 0.4806,
-    city: 'San Francisco, CAA',
+    city: 'San Francisco, CA',
     date: '6/5/2019',
     time: '9:00pm',
     venue: 'The Warfield'
@@ -80,11 +84,14 @@ var tourMarkers = [
   }
 ];
 
+// create map markers in html
 var mapData = '';
 for(var i = 0; i < tourMarkers.length; i++){
   var t = tourMarkers[i];
   mapData += `
-    <div class='map-marker' style='left: ` + (t.x * 100) + `%; top: ` + (t.y * 100) + `%;' data-id=` + i + `></div>
+    <div class='map-marker' style='left: ` + (t.x * 100) + `%; top: ` + (t.y * 100) + `%;' data-id=` + i + `>
+      <div class='label'>` + t.city + `</div>
+    </div>
   `;
 }
 map.innerHTML += mapData;
