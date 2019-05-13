@@ -1,0 +1,61 @@
+#tour{
+  position: relative;
+  width: 100%;
+  padding: 180px 0 80px;
+  background: linear-gradient(to bottom, #236, #844);
+}
+
+#tour .section-title{
+  color: #fef;
+  margin-bottom: 60px;
+}
+
+#map{
+  position: relative;
+  height: calc((733 / 1182) * (100vw - 400px));
+  margin: 0 200px;
+  background: url('/media/map.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* thank you stack overflow */
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+#map img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+#map .map-marker{
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin: -12px 0 0 -12px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+}
+#map .map-marker:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#map .map-marker::before{
+  content: 'x';
+  color: #fff;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  transition: color 0.2s ease;
+}
+#map .map-marker:hover::before{
+  color: #000;
+}

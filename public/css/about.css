@@ -1,7 +1,7 @@
 #about{
   position: relative;
-  width: 100vw;
-  padding-top: 97px;
+  width: 100%;
+  padding: 100px 0 100px;
   background: linear-gradient(to bottom, #236, #844);
 }
 
@@ -31,12 +31,4 @@
 }
 #about #bio .photo-cred{
   opacity: 0.5;
-}
-
-#water{
-  margin-top: -600px;
-  position: absolute;
-  width: 100vw;
-  height: 600px;
-  background: linear-gradient(to bottom, #113, #002);
 }
