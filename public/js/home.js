@@ -22,3 +22,7 @@ for(var i in albums){
     window.location.href = '/music/' + e.currentTarget.dataset.target;
   });
 }
+
+$('.tour-btn').addEventListener('click', function(){
+  window.location.href = '/tour';
+});

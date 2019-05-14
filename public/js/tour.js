@@ -95,3 +95,26 @@ for(var i = 0; i < tourMarkers.length; i++){
   `;
 }
 map.innerHTML += mapData;
+
+// now make them clickable!
+var markers = $('.map-marker')
+for(var i in markers){
+  if(!markers[i].dataset) break;
+  markers[i].addEventListener('click', showModal);
+}
+$('#modal-backdrop').addEventListener('click', hideModal);
+$('#exit-modal').addEventListener('click', hideModal);
+
+function showModal(e){
+  var show = tourMarkers[e.currentTarget.dataset.id];
+  $('#modal-backdrop').className = 'active';
+  $('#tour-modal').className = 'active';
+  $('#tour-date').innerHTML = show.date;
+  $('#tour-city').innerHTML = show.city;
+  $('#tour-venue').innerHTML = show.venue;
+  $('#tour-time').innerHTML = show.time;
+}
+function hideModal(){
+  $('#modal-backdrop').className = '';
+  $('#tour-modal').className = '';
+}
