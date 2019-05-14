@@ -48,7 +48,7 @@
     }
 }
 
-#water, #navbar, #portfolio{
+#water, #navbar, #tour-banner, #portfolio{
   -webkit-transform: translateZ(1px);
   -moz-transform: translateZ(1px);
   -o-transform: translateZ(1px);
@@ -77,7 +77,6 @@
 #water{
   position: relative;
   width: 100%;
-  min-height: 100vh;
   background: linear-gradient(to bottom, #113, #002);
   overflow: hidden;
 }
@@ -93,8 +92,105 @@
   opacity: 0.7;
 }
 
+#tour-banner{
+  display: flex;
+  position: relative;
+  width: calc(100% - 240px);
+  max-width: 840px;
+  left: 0;
+  right: 0;
+  margin: 80px auto 60px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#tour-banner #tour-centerpiece{
+  position: relative;
+  min-width: 350px;
+  margin: 20px;
+  flex: 1 1 0;
+  background: url('/media/albumcovers/album1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#tour-banner #tour-centerpiece::before{
+  content: '';
+  display: block;
+  position: relative;
+  padding-top: 100%;
+}
+#tour-banner #tour-desc{
+  display: flex;
+  position: relative;
+  min-width: 350px;
+  margin: 20px;
+  flex-direction: column;
+  flex: 1 1 0;
+  align-content: start;
+  text-align: left;
+  color: #fcf
+}
+#tour-desc .date{
+  position: relative;
+  margin-bottom: 5px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+}
+#tour-desc .section-title{
+  position: relative;
+  margin-bottom: 5px;
+  text-align: left;
+  font-size: 42px;
+}
+#tour-desc .subheading{
+  position: relative;
+  margin-bottom: 20px;
+  font-family: 'Lora', serif;
+  font-size: 24px;
+  letter-spacing: 0.2em;
+}
+#tour-desc .info{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  flex-grow: 1;
+  color: #bab;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 17px;
+  overflow: visible;
+}
+#tour-banner .tour-btn{
+  position: relative;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  margin: 20px auto 0;
+  padding: 10px;
+  border: 3px solid #fcf;
+  background-color: transparent;
+  color: #fcf;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+#tour-banner .tour-btn:hover{
+  background-color: #fcf;
+  color: #002;
+}
+
+.divider{
+  width: 50px;
+  margin: 80px auto;
+  border-bottom: 3px solid #fcf;
+}
+
 #portfolio{
-  margin: 80px 100px;
+  margin: 40px 100px 80px;
 }
 #portfolio .section-title{
   margin-bottom: 65px;
