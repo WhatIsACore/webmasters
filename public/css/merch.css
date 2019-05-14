@@ -1,0 +1,27 @@
+ul {
+	list-style: none;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+
+}
+
+.item {
+	float:left;
+	margin: auto;
+}
+
+.item_img {
+	height: 300px;
+	width: 300px;
+}
+
+body {
+	background-color: coral;
+}
+
+#merchandise {
+	align-items: center;
+}
