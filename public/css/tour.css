@@ -1,6 +1,7 @@
 #tour{
   position: relative;
   width: 100%;
+  min-height: calc(100vh - 260px);
   padding: 180px 0 80px;
   background: linear-gradient(to bottom, #236, #844);
 }
@@ -172,4 +173,92 @@
   font-family: 'Lora', sans-serif;
   font-size: 20px;
   font-weight: 700;
+}
+.divider{
+  width: 25px;
+  margin: 40px auto;
+  border-bottom: 3px solid #000;
+}
+.tour-info{
+  margin-bottom: 40px;
+  color: #222;
+  font-family: 'Lora', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.tour-info info{
+  display: block;
+  margin-bottom: 5px;
+  color: #000;
+  font-family: 'Noto Sans', sans-serif;
+  text-transform: uppercase;
+}
+.tour-info price{
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+}
+.tour-info disclaimer{
+  font-family: 'Lora', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  opacity: 0.5;
+}
+#tour-buy-btn{
+  display: inline-block;
+  padding: 10px;
+  border: 2.5px solid #222;
+  background-color: transparent;
+  color: #222;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+#tour-buy-btn:hover{
+  background-color: #222;
+  color: #eee;
+}
+
+#tour-list{
+  margin: 40px 100px;
+  color: #fef;
+}
+#tour-list .tour-date{
+  display: flex;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.tour-date .date{
+  width: 300px;
+  padding-right: 10px;
+  flex-grow: 0.7;
+  text-align: right;
+  font-family: 'Lora';
+  font-size: 28px;
+  font-weight: 700;
+}
+.tour-date .info{
+  width: 300px;
+  padding-left: 10px;
+  flex-grow: 1;
+}
+.tour-date .city{
+  font-family: 'Lora';
+  font-size: 20px;
+  font-weight: 700;
+}
+.tour-date .venue{
+  font-family: 'Noto Sans';
+  font-size: 17px;
+}
+.tour-date .tickets{
+  color: #bab;
+  font-family: 'Noto Sans';
+  font-size: 17px;
+}
+.tour-date .tickets a:hover{
+  color: #fff;
 }

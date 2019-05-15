@@ -29,6 +29,10 @@
   font-size: 17px;
   z-index: 2;
 }
-#about #bio .photo-cred{
+#about #bio a{
   opacity: 0.5;
+  color: #fcf;
+}
+#about #bio a:hover{
+  opacity: 1;
 }

@@ -4,6 +4,7 @@ body{
   background-color: #000;
 }
 a{
+  color: inherit;
   text-decoration: none;
 }
 
@@ -62,4 +63,14 @@ a{
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+}
+
+.page-title{
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fef;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
 }

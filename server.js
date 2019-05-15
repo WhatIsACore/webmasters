@@ -27,6 +27,9 @@ routes.use(compression())
       .get('/tour', function(req, res, next){
         res.sendFile(__dirname + '/public/tour.html');
       })
+      .get('/tour/list', function(req, res, next){
+        res.sendFile(__dirname + '/public/tour-list.html');
+      })
       .get('/merch', function(req, res, next){
         res.sendFile(__dirname + '/public/merch.html');
       })

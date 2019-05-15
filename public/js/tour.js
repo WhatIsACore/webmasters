@@ -118,3 +118,7 @@ function hideModal(){
   $('#modal-backdrop').className = '';
   $('#tour-modal').className = '';
 }
+
+$('#tour-buy-btn').addEventListener('click', function(){
+  window.location.href = '/merch?prod=tourtix';
+});
