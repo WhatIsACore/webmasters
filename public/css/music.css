@@ -8,7 +8,7 @@
 #music .page-title{
   margin-bottom: 80px;
 }
-#music-row{
+.music-row{
   display: flex;
   max-width: 1100px;
   margin: -40px auto;

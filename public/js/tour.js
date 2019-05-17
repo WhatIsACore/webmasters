@@ -6,6 +6,19 @@ function $(query){
   return q.length > 1 ? q : q[0];
 }
 
+window.setTimeout(function(){
+  $('.section-title').style.opacity = 1;
+}, 200);
+window.setTimeout(function(){
+  $('.subtitle').style.opacity = 1;
+}, 400);
+window.setTimeout(function(){
+  $('.btn-wrapper').style.opacity = 1;
+}, 500);
+window.setTimeout(function(){
+  $('#map').style.opacity = 1;
+}, 800);
+
 var map = $('#map');
 
 // uncomment this code to find the coordinates for new map markers

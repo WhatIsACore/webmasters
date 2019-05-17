@@ -6,6 +6,10 @@ function $(query){
   return q.length > 1 ? q : q[0];
 }
 
+window.setTimeout(function(){
+  $('#music').style.opacity = 1;
+}, 200);
+
 var viewBtns = $('.view-btn');
 for(var i in viewBtns){
   if(!viewBtns[i].dataset) break;

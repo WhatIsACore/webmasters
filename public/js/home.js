@@ -6,13 +6,40 @@ function $(query){
   return q.length > 1 ? q : q[0];
 }
 
-// make the reflection match the sun!
 function scrollUpdate(){
   $('#sun-reflection').style.marginTop = $('#water').getBoundingClientRect().top - $('#sun').getBoundingClientRect().bottom + 'px';
+  var scroll = window.scrollY;
+
+  var hiddenEls = $('.hidden1');
+  var ht = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+  for(var i in hiddenEls){
+    var h = hiddenEls[i];
+    if(!h.getBoundingClientRect) break;
+    if(ht - h.getBoundingClientRect().top > 150) h.style.opacity = 1;
+  }
+  
 }
-window.addEventListener('scroll', scrollUpdate);
-window.addEventListener('resize', scrollUpdate);
-scrollUpdate();
+
+$('#sun-reflection').style.marginTop = $('#water').getBoundingClientRect().top - $('#sun').getBoundingClientRect().bottom + 'px';
+// reveals
+window.setTimeout(function(){
+  $('#sun').style.opacity = 1;
+  $('#sun').className += ' risen';
+  $('#sun-reflection').style.marginTop = 'calc(36vh - 14vw)';
+}, 10);
+window.setTimeout(function(){
+  $('#logo').style.opacity = 1;
+}, 400);
+window.setTimeout(function(){
+  $('#sun-reflection').className = 'risen';
+  // make the reflection match the sun!
+  window.addEventListener('scroll', scrollUpdate);
+  window.addEventListener('resize', scrollUpdate);
+  scrollUpdate();
+}, 600);
+window.setTimeout(function(){
+  $('#tour-banner').style.opacity = 1;
+}, 800);
 
 // make album links work
 var albums = $('#album-grid .item');

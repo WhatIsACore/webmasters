@@ -6,6 +6,13 @@ function $(query){
   return q.length > 1 ? q : q[0];
 }
 
+window.setTimeout(function(){
+  $('.page-title').style.opacity = 1;
+}, 200);
+window.setTimeout(function(){
+  $('#tour-list').style.opacity = 1;
+}, 400);
+
 var tourDates = [
   {
     city: 'Boise, ID',
