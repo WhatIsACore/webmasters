@@ -1,3 +1,70 @@
+#music{
+  position: relative;
+  width: calc(100% - 200px);
+  min-height: calc(100vh - 180px);
+  padding: 180px 100px 80px;
+  background: linear-gradient(to bottom, #236, #844);
+}
+#music .page-title{
+  margin-bottom: 80px;
+}
+#music-row{
+  display: flex;
+  max-width: 1100px;
+  margin: -40px auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#music .preview-panel{
+  display: flex;
+  width: 500px;
+  height: 270px;
+  left: 0;
+  right: 0;
+  margin: 40px 15px;
+}
+.preview-panel .album-cover{
+  width: 270px;
+  height: 270px;
+  flex-shrink: 0;
+}
+.preview-panel .album-info{
+  display: flex;
+  width: 200px;
+  height: 270px;
+  margin-left: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.preview-panel .album-label{
+  margin-bottom: 20px;
+  color: #fef;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+}
+.preview-panel .view-btn{
+  display: inline-block;
+  padding: 10px;
+  border: 2.5px solid #bab;
+  color: #bab;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: color 0.2s ease, border 0.2s ease;
+}
+.preview-panel .view-btn:hover{
+  border: 2.5px solid #fef;
+  color: #fef;
+}
+
 .album{
   position: relative;
   width: calc(100% - 200px);
@@ -5,7 +72,6 @@
   min-height: calc(100vh - 200px);
   background: linear-gradient(to bottom, #236, #844);
 }
-
 .info-panel{
   display: flex;
   width: 700px;
@@ -20,27 +86,6 @@
   display: inline-block;
   width: 280px;
   height: 280px;
-  background-color: #000;
-}
-.album-cover.album1{
-  background: url('/media/albumcovers/album1.jpg');
-  background-size: cover;
-  background-position: center;
-}
-.album-cover.album2{
-  background: url('/media/albumcovers/album2.jpg');
-  background-size: cover;
-  background-position: center;
-}
-.album-cover.album3{
-  background: url('/media/albumcovers/album3.jpg');
-  background-size: cover;
-  background-position: center;
-}
-.album-cover.album4{
-  background: url('/media/albumcovers/album4.jpg');
-  background-size: cover;
-  background-position: center;
 }
 .info-panel .album-info{
   display: flex;
@@ -91,4 +136,25 @@
 .info-panel .purchase-btn:hover{
   border: 2.5px solid #fef;
   color: #fef;
+}
+
+.album-cover.album1{
+  background: url('/media/albumcovers/album1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.album-cover.album2{
+  background: url('/media/albumcovers/album2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.album-cover.album3{
+  background: url('/media/albumcovers/album3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.album-cover.album4{
+  background: url('/media/albumcovers/album4.jpg');
+  background-size: cover;
+  background-position: center;
 }

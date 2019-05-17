@@ -6,6 +6,14 @@ function $(query){
   return q.length > 1 ? q : q[0];
 }
 
-$('.purchase-btn').addEventListener('click', function(e){
+var viewBtns = $('.view-btn');
+for(var i in viewBtns){
+  if(!viewBtns[i].dataset) break;
+  viewBtns[i].addEventListener('click', function(e){
+    window.location.href = '/music/' + e.currentTarget.dataset.target;
+  });
+}
+
+if($('.purchase-btn')) $('.purchase-btn').addEventListener('click', function(e){
   window.location.href = '/merch?prod=' + e.currentTarget.dataset.target;
 });

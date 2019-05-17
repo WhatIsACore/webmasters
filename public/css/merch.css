@@ -1,3 +1,11 @@
+#container {
+	position: relative;
+  width: 100%;
+  min-height: calc(100vh - 260px);
+  padding: 180px 0 80px;
+  background: linear-gradient(to bottom, #236, #844);
+}
+
 ul {
 	list-style: none;
 }
@@ -10,18 +18,49 @@ li {
 
 .item {
 	float:left;
-	margin: auto;
+	margin: 10px;
+	padding: 20px;
+	min-width: 250px;
+	position: relative;
+	flex-grow: 1;
 }
 
-.item_img {
-	height: 300px;
-	width: 300px;
+.item::before {
+	content: '';
+	display: inline-block;
+	padding-top: 100%;
+
 }
 
-body {
-	background-color: coral;
+#vent {
+	background: url('/media/albumcovers/album1.jpg');
+	background-size: cover;
+  	background-position: center;
+}
+
+#ac {
+	background: url('/media/albumcovers/album2.jpg');
+	background-size: cover;
+  	background-position: center;
+}
+
+#sgep {
+	background: url('/media/albumcovers/album3.jpg');
+	background-size: cover;
+  	background-position: center;
+}
+
+#microwave {
+	background: url('/media/albumcovers/album4.jpg');
 }
 
 #merchandise {
 	align-items: center;
+	width: calc(100% - 200px);
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-wrap: wrap;
 }
