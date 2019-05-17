@@ -69,3 +69,19 @@ p{
 	text-align:left;
 	letter-spacing:2px;
 }
+
+#desbrieflink{
+	width: 100vw;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 900;
+	margin-bottom: 100px;
+}
+a{
+	text-decoration: none;
+	color: #00f;
+	opacity: 0.7;
+}
+#desbrieflink a:hover{
+	opacity: 1;
+}
