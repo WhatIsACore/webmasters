@@ -72,7 +72,7 @@ a{
 .section-title{
   text-align: center;
   font-family: 'Noto Sans', sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -85,8 +85,8 @@ a{
   font-family: 'Noto Sans', sans-serif;
   font-size: 24px;
   font-weight: 700;
-  letter-spacing: 0.2em;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .footer{
