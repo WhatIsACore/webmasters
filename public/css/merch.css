@@ -1,66 +1,112 @@
-#container {
+#merch {
 	position: relative;
   width: 100%;
   min-height: calc(100vh - 260px);
-  padding: 180px 0 80px;
+  padding: 180px 0 100px;
   background: linear-gradient(to bottom, #236, #844);
 }
 
-ul {
-	list-style: none;
-}
-
-li {
-	list-style: none;
-	display: inline-block;
-
-}
-
-.item {
-	float:left;
-	margin: 10px;
-	padding: 20px;
-	min-width: 250px;
+#store-wrapper{
 	position: relative;
-	flex-grow: 1;
+	margin: 0 100px;
+	padding: 40px;
+	background-color: #eee;
 }
 
-.item::before {
-	content: '';
+#merch-grid{
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#merch-grid .item{
+	display: inline-flex;
+	position: relative;
+	width: 200px;
+	min-width: 150px;
+	margin: 20px;
+	padding: 20px;
+	flex-direction: column;
+	flex: 1 0 auto;
+	cursor: pointer;
+}
+#merch-grid .picture{
 	display: inline-block;
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	outline: 2px solid #ccc;
+	background-color: #fff;
+}
+#merch-grid .album-cover .picture{
+	width: calc(100% - 80px);
+	min-width: 70px;
+	border: 40px solid #fff;
+}
+#merch-grid .picture:before{
+	content: '';
+	float: left;
 	padding-top: 100%;
-
 }
 
-#vent {
+#merch-grid .item .label{
+	margin-top: 10px;
+	text-align: center;
+	color: #444;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+#merch-grid .item .price{
+	text-align: center;
+	color: #222;
+	font-family: 'Lora', sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+}
+
+#vent .picture{
 	background: url('/media/albumcovers/album1.jpg');
 	background-size: cover;
-  	background-position: center;
+  background-position: center;
 }
-
-#ac {
+#ac .picture{
 	background: url('/media/albumcovers/album2.jpg');
 	background-size: cover;
-  	background-position: center;
+  background-position: center;
 }
-
-#sgep {
+#ep .picture{
 	background: url('/media/albumcovers/album3.jpg');
 	background-size: cover;
-  	background-position: center;
+  background-position: center;
 }
-
-#microwave {
+#microwave .picture{
 	background: url('/media/albumcovers/album4.jpg');
+	background-size: cover;
+  background-position: center;
 }
-
-#merchandise {
-	align-items: center;
-	width: calc(100% - 200px);
-	margin: 0 auto;
-	position: absolute;
-	left: 0;
-	right: 0;
-	display: flex;
-	flex-wrap: wrap;
+#tickets .picture{
+	background: url('/media/shop/tickets.jpg');
+	background-size: cover;
+  background-position: center;
+}
+#shirt-logo .picture{
+	background: url('/media/shop/shirt-logo.jpg');
+	background-size: cover;
+  background-position: center;
+}
+#shirt-sun .picture{
+	background: url('/media/shop/shirt-sun.jpg');
+	background-size: cover;
+  background-position: center;
+}
+#seagull .picture{
+	background: url('/media/shop/seagull.jpg');
+	background-size: cover;
+  background-position: center;
 }

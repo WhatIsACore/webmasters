@@ -36,6 +36,7 @@ routes.use(compression())
       .get('/blog', function(req, res, next){
         res.sendFile(__dirname + '/public/blog.html');
       })
+      .use('/tsa', express.static(__dirname + '/tsa'))
       .use('/', express.static(__dirname + '/public'));
 
 var port = process.env.PORT || 5000;
