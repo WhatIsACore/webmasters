@@ -17,3 +17,16 @@ function updateWidth(){
 }
 window.addEventListener('resize', updateWidth);
 updateWidth();
+
+function scrollUpdate(){
+  var scroll = window.scrollY;
+
+  if(scroll > 1){
+    $('#navbar').className = 'scrolled';
+  } else {
+    $('#navbar').className = '';
+  }
+}
+window.addEventListener('scroll', scrollUpdate);
+window.addEventListener('resize', scrollUpdate);
+scrollUpdate();

@@ -21,10 +21,15 @@ a{
   width: calc(100% - 180px);
   height: 40px;
   padding: 30px 80px 30px 100px;
-  background-color: #000;
+  background-color: transparent;
   text-align: right;
   font-family: 'Noto Sans', sans-serif;
-  z-index: 1;
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+#navbar.scrolled{
+  position: fixed;
+  background-color: #000;
 }
 #navbar .nav-home{
   display: inline-block;

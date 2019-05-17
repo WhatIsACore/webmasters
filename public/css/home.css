@@ -76,9 +76,9 @@
   background-position: 50% 100%;
   background-size: 100% 100%;
   background-attachment: fixed;
-  -webkit-animation: brighten 0.6s ease;
-  -moz-animation: brighten 0.6s ease;
-  animation: brighten 0.6s ease;
+  -webkit-animation: brighten 1s ease;
+  -moz-animation: brighten 1s ease;
+  animation: brighten 1s ease;
   overflow: hidden;
 }
 #sun{

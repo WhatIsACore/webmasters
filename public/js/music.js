@@ -21,3 +21,16 @@ for(var i in viewBtns){
 if($('.purchase-btn')) $('.purchase-btn').addEventListener('click', function(e){
   window.location.href = '/merch?prod=' + e.currentTarget.dataset.target;
 });
+
+function scrollUpdate(){
+  var scroll = window.scrollY;
+
+  if(scroll > 1){
+    $('#navbar').className = 'scrolled';
+  } else {
+    $('#navbar').className = '';
+  }
+}
+window.addEventListener('scroll', scrollUpdate);
+window.addEventListener('resize', scrollUpdate);
+scrollUpdate();
