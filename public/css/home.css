@@ -54,9 +54,14 @@
   -moz-animation: rise 0.8s ease;
   animation: rise 0.8s ease;
   animation-delay: 0.4s;
+  transition: opacity 1.5s ease;
+  margin-top: 0;
 }
 #logo img{
   width: 100%;
+}
+#logo.no-rise{
+  animation-duration: 0s;
 }
 @media screen and (max-height: 650px){
     #logo{
@@ -111,6 +116,10 @@
 #sun.risen{
   margin: 20vh auto 0;
 }
+#sun.no-rise{
+  margin: 20vh auto 0;
+  transition: margin 0s linear;
+}
 
 #water{
   position: relative;
@@ -129,7 +138,7 @@
   background: linear-gradient(to top, #e57, #e9c);
   opacity: 0.7;
 }
-#sun-reflection:not(.risen){
+#sun-reflection:not(.risen):not(.no-rise){
   transition: margin 0.6s ease;
 }
 #tour-banner{

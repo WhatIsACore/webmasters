@@ -7,13 +7,18 @@ a{
   color: inherit;
   text-decoration: none;
 }
+
 .hidden{
 	opacity: 0;
-	transition: opacity 1.5s ease;
+  margin-top: 20px;
+	transition: opacity 0.5s ease, margin 0.5s ease;
 }
 .hidden1{
   opacity: 0;
-  transition: opacity 1.5s ease;
+  transition: opacity 0.5s ease, margin 0.5s ease;
+}
+.revealed{
+  transition: opacity 0.5s ease, margin 0.5s ease;
 }
 
 #navbar{

@@ -6,6 +6,11 @@ function $(query){
   return q.length > 1 ? q : q[0];
 }
 
+setTimeout(function(){
+  $('.page-title').className = $('.page-title').className.replace('hidden', 'revealed');
+  $('#tour-list').className = 'revealed';
+}, 50);
+
 function scrollUpdate(){
   var scroll = window.scrollY;
 

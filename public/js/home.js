@@ -17,26 +17,39 @@ function scrollUpdate(){
     if(!h.getBoundingClientRect) break;
     if(ht - h.getBoundingClientRect().top > 150) h.style.opacity = 1;
   }
-  
+
 }
 
 $('#sun-reflection').style.marginTop = $('#water').getBoundingClientRect().top - $('#sun').getBoundingClientRect().bottom + 'px';
-// reveals
-window.setTimeout(function(){
+
+if(window.scrollY > 0){
   $('#sun').style.opacity = 1;
-  $('#sun').className += ' risen';
-  $('#sun-reflection').style.marginTop = 'calc(36vh - 14vw)';
-}, 10);
-window.setTimeout(function(){
+  $('#sun').className += ' no-rise';
   $('#logo').style.opacity = 1;
-}, 400);
-window.setTimeout(function(){
-  $('#sun-reflection').className = 'risen';
-  // make the reflection match the sun!
+  $('#logo').className += ' no-rise';
+  $('#sun-reflection').className = 'no-rise';
   window.addEventListener('scroll', scrollUpdate);
   window.addEventListener('resize', scrollUpdate);
   scrollUpdate();
-}, 600);
+} else {
+  // reveals
+  window.setTimeout(function(){
+    $('#sun').style.opacity = 1;
+    $('#sun').className += ' risen';
+    $('#sun-reflection').style.marginTop = 'calc(36vh - 14vw)';
+  }, 10);
+  window.setTimeout(function(){
+    $('#logo').style.opacity = 1;
+  }, 400);
+  window.setTimeout(function(){
+    $('#sun-reflection').className = 'risen';
+    // make the reflection match the sun!
+    window.addEventListener('scroll', scrollUpdate);
+    window.addEventListener('resize', scrollUpdate);
+    scrollUpdate();
+  }, 600);
+}
+
 window.setTimeout(function(){
   $('#tour-banner').style.opacity = 1;
 }, 800);

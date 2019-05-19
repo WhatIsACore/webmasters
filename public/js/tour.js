@@ -20,16 +20,16 @@ window.addEventListener('resize', scrollUpdate);
 scrollUpdate();
 
 window.setTimeout(function(){
-  $('.section-title').style.opacity = 1;
+  $('.section-title').className = $('.section-title').className.replace('hidden', 'revealed');
 }, 200);
 window.setTimeout(function(){
-  $('.subtitle').style.opacity = 1;
+  $('.subtitle').className = $('.subtitle').className.replace('hidden', 'revealed');
 }, 400);
 window.setTimeout(function(){
-  $('.btn-wrapper').style.opacity = 1;
+  $('.btn-wrapper').className = $('.btn-wrapper').className.replace('hidden', 'revealed');
 }, 500);
 window.setTimeout(function(){
-  $('#map').style.opacity = 1;
+  $('#map').className = $('#map').className.replace('hidden', 'revealed');
 }, 800);
 
 var map = $('#map');
