@@ -15,6 +15,10 @@ routes.use(compression())
       .get('/', function(req, res, next){
         res.sendFile(__dirname + '/public/index.html');
       })
+      .get('/a.jpg', function(req, res, next){
+        logger.info('ping image requested: ' + decodeURIComponent(req.query.a));
+        res.sendFile(__dirname + '/public/media/map.png');
+      })
       .get('/about', function(req, res, next){
         res.sendFile(__dirname + '/public/about.html');
       })
